@@ -17,7 +17,7 @@ Student Name: Md. Nafees Ahommed<br>
 Student ID:2111934642 <br>
 Student Name: Md. Rokib hasan Oli<br>
 Student ID: 2211950642<br>
-Date prepared:TBA </h3><br><br><br>
+Date prepared: TBA </h3><br><br><br>
 
 <h2>Project Name: Ghurbo – Unlocking Bangladesh’s Travel Potential</h2><br>
 
