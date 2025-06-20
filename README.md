@@ -1,6 +1,6 @@
 
 <p align="center"> 
-  <img width="250" height="280" src="images/NSU_Logo.png">
+  <img width="250" height="280" src="image/NSU_Logo.png">
 </p>                                        
 
 <h1 align="center">Project Name: Ghurbo</h1>
