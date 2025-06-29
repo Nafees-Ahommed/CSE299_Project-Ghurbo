@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home';
+import Footer from './components/Footer';
+import TourPackages from './pages/TourPackages';
 
 const App = () => {
 
@@ -18,11 +20,11 @@ const App = () => {
       <Routes>
 
         <Route path= '/' element ={<Home/>} />
-
+        <Route path= '/packages' element ={<TourPackages/>} />
       </Routes>
 
       </div>
-      
+      <Footer />
     </div>
   )
 }

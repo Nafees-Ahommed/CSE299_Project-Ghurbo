@@ -1,4 +1,4 @@
-import logo from './logo.svg'
+import logo from './Ghurbo_Logo_White.svg'
 import searchIcon from './searchIcon.svg'
 import userIcon from './userIcon.svg'
 import calenderIcon from './calenderIcon.svg'
@@ -23,10 +23,10 @@ import badgeIcon from './badgeIcon.svg'
 import menuIcon from './menuIcon.svg'
 import closeMenu from './closeMenu.svg'
 import guestsIcon from './guestsIcon.svg'
-import roomImg1 from './roomImg1.png'
-import roomImg2 from './roomImg2.png'
-import roomImg3 from './roomImg3.png'
-import roomImg4 from './roomImg4.png'
+import packageImg1 from './packageImg1.png'
+import packageImg2 from './packageImg2.png'
+import packageImg3 from './packageImg3.png'
+import packageImg4 from './packageImg4.png'
 import regImage from './regImage.png'
 import exclusiveOfferCardImg1 from "./exclusiveOfferCardImg1.png";
 import exclusiveOfferCardImg2 from "./exclusiveOfferCardImg2.png";
@@ -75,24 +75,27 @@ export const assets = {
 }
 
 export const cities = [
-    "Dubai",
-    "Singapore",
-    "New York",
-    "London",
+    "Dhaka",
+    "Chattogram",
+    "Sylhet",
+    "Rajshahi",
+    "Khulna",
+    "Barisal",
+    "Cox’s Bazar",
 ];
 
 // Exclusive Offers Dummy Data
 export const exclusiveOffers = [
     { _id: 1, title: "Summer Escape Package", description: "Enjoy a complimentary night and daily breakfast", priceOff: 25, expiryDate: "Aug 31", image: exclusiveOfferCardImg1 },
     { _id: 2, title: "Romantic Getaway", description: "Special couples package including spa treatment", priceOff: 20, expiryDate: "Sep 20", image: exclusiveOfferCardImg2 },
-    { _id: 3, title: "Luxury Retreat", description: "Book 60 days in advance and save on your stay at any of our luxury properties worldwide.", priceOff: 30, expiryDate: "Sep 25", image: exclusiveOfferCardImg3 },
+    { _id: 3, title: "Tea Valley Retreat", description: "Book 10 days in advance and save on your stay at any of our luxury properties worldwide.", priceOff: 30, expiryDate: "Sep 25", image: exclusiveOfferCardImg3 },
 ]
 
 // Testimonials Dummy Data
 export const testimonials = [
-    { id: 1, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay provides." },
-    { id: 2, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "QuickStay exceeded my expectations. The booking process was seamless, and the hotels were absolutely top-notch. Highly recommended!" },
-    { id: 3, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best luxury accommodations through QuickStay. Their recommendations never disappoint!" }
+    { id: 1, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many travel platforms before, but none compare to the personalized service and attention to detail this platform offers." },
+    { id: 2, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "Exceeded my expectations. The booking process was seamless, and the tour packages were exceptional. Highly recommended!" },
+    { id: 3, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Fantastic experience with Ghurbo! I always find the best travel deals and authentic experiences here. Never disappointed!" }
 ];
 
 // Facility Icon
@@ -123,20 +126,20 @@ export const userDummyData = {
     "updatedAt": "2025-04-10T06:34:48.719Z",
     "__v": 1,
     "recentSearchedCities": [
-        "New York"
+        "Dhaka"
     ]
 }
 
 // Hotel Dummy Data
 export const hotelDummyData = {
     "_id": "67f76393197ac559e4089b72",
-    "name": "Urbanza Suites",
-    "address": "Main Road  123 Street , 23 Colony",
-    "contact": "+0123456789",
+    "name": "Best Tour Packages",
+    "address": "Sugandha Point, Cox’s Bazar, Bangladesh",
+    "contact": "+8801712345678",
     "owner": userDummyData,
-    "city": "New York",
-    "createdAt": "2025-04-10T06:22:11.663Z",
-    "updatedAt": "2025-04-10T06:22:11.663Z",
+    "city": "Cox’s Bazar",
+    "createdAt": "2025-06-01T08:30:00.000Z",
+    "updatedAt": "2025-06-20T12:00:00.000Z",
     "__v": 0
 }
 
@@ -146,9 +149,9 @@ export const roomsDummyData = [
         "_id": "67f7647c197ac559e4089b96",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
-        "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
-        "images": [roomImg1, roomImg2, roomImg3, roomImg4],
+        "pricePerNight": 5000,
+        "amenities": ["Free WiFi", "Free Breakfast", "Pool Access"],
+        "images": [packageImg1, packageImg2, packageImg3, packageImg4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
         "updatedAt": "2025-04-10T06:26:04.013Z",
@@ -158,9 +161,9 @@ export const roomsDummyData = [
         "_id": "67f76452197ac559e4089b8e",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
-        "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
-        "images": [roomImg2, roomImg3, roomImg4, roomImg1],
+        "pricePerNight": 3599,
+        "amenities": ["Free WiFi", "Free Breakfast", "Pool Access"],
+        "images": [packageImg2, packageImg3, packageImg4, packageImg1],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
         "updatedAt": "2025-04-10T06:25:22.593Z",
@@ -170,9 +173,9 @@ export const roomsDummyData = [
         "_id": "67f76406197ac559e4089b82",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
-        "pricePerNight": 249,
-        "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
-        "images": [roomImg3, roomImg4, roomImg1, roomImg2],
+        "pricePerNight": 2549,
+        "amenities": ["Free WiFi", "Free Breakfast", "Mountain View"],
+        "images": [packageImg3, packageImg4, packageImg1, packageImg2],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:24:06.285Z",
         "updatedAt": "2025-04-10T06:24:06.285Z",
@@ -182,9 +185,10 @@ export const roomsDummyData = [
         "_id": "67f763d8197ac559e4089b7a",
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
-        "pricePerNight": 199,
-        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
-        "images": [roomImg4, roomImg1, roomImg2, roomImg3],
+        "pricePerNight": 2999,
+        "amenities": ["Free WiFi", "Free Breakfast", "Mountain View"],
+        "images": [packageImg4, packageImg1, packageImg2, packageImg3],
+
         "isAvailable": true,
         "createdAt": "2025-04-10T06:23:20.252Z",
         "updatedAt": "2025-04-10T06:23:20.252Z",
