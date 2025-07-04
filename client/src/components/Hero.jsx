@@ -40,7 +40,7 @@ const Hero = () => {
                 <div className='flex items-center gap-2'>
                     <img src={assets.calenderIcon}  alt="" className='h-4' />
                     
-                    <label htmlFor="checkIn">Check in</label>
+                    <label htmlFor="checkIn">From</label>
                 </div>
                 <input id="checkIn" type="date" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" />
             </div>
@@ -48,7 +48,7 @@ const Hero = () => {
             <div>
                 <div className='flex items-center gap-2'>
                     <img src={assets.calenderIcon}  alt="" className='h-4' />
-                    <label htmlFor="checkOut">Check out</label>
+                    <label htmlFor="checkOut">To</label>
                 </div>
                 <input id="checkOut" type="date" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" />
             </div>

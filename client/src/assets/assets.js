@@ -109,10 +109,10 @@ export const facilityIcons = {
 
 // For Room Details Page
 export const roomCommonData = [
-    { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
-    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
-    { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
-    { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
+    { icon: assets.homeIcon, title: "Clean & Safe Travel", description: "All our tours follow strict hygiene and safety protocols for your peace of mind." },
+    { icon: assets.badgeIcon, title: "Trusted Service", description: "Curated by Ghurbo with verified partners and expert travel planners." },
+    { icon: assets.locationFilledIcon, title: "Top Destinations", description: "Most of our travelers rated the location 5 stars — close to top attractions and essentials." },
+    { icon: assets.heartIcon, title: "Seamless Booking", description: "Fast, easy, and reliable booking with Ghurbo’s dedicated support." },
 ];
 
 // User Dummy Data
@@ -120,7 +120,7 @@ export const userDummyData = {
     "_id": "user_2unqyL4diJFP1E3pIBnasc7w8hP",
     "username": "Great Stack",
     "email": "user.greatstack@gmail.com",
-    "image": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJ2N2c5YVpSSEFVYVUxbmVYZ2JkSVVuWnFzWSJ9",
+    "image": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yekE3MU9oZ3djU3FtUTVkT05kZk5FR2Y1SHgifQ?width=96",
     "role": "hotelOwner",
     "createdAt": "2025-03-25T09:29:16.367Z",
     "updatedAt": "2025-04-10T06:34:48.719Z",
@@ -148,7 +148,7 @@ export const roomsDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Solo Traveler",
         "pricePerNight": 5000,
         "amenities": ["Free WiFi", "Free Breakfast", "Pool Access"],
         "images": [packageImg1, packageImg2, packageImg3, packageImg4],
@@ -160,7 +160,7 @@ export const roomsDummyData = [
     {
         "_id": "67f76452197ac559e4089b8e",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Couple's Getaway",
         "pricePerNight": 3599,
         "amenities": ["Free WiFi", "Free Breakfast", "Pool Access"],
         "images": [packageImg2, packageImg3, packageImg4, packageImg1],
@@ -172,7 +172,7 @@ export const roomsDummyData = [
     {
         "_id": "67f76406197ac559e4089b82",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Family Fun",
         "pricePerNight": 2549,
         "amenities": ["Free WiFi", "Free Breakfast", "Mountain View"],
         "images": [packageImg3, packageImg4, packageImg1, packageImg2],
@@ -184,7 +184,7 @@ export const roomsDummyData = [
     {
         "_id": "67f763d8197ac559e4089b7a",
         "hotel": hotelDummyData,
-        "roomType": "Single Bed",
+        "roomType": "Friends Trip",
         "pricePerNight": 2999,
         "amenities": ["Free WiFi", "Free Breakfast", "Mountain View"],
         "images": [packageImg4, packageImg1, packageImg2, packageImg3],
@@ -207,8 +207,8 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-30T00:00:00.000Z",
         "checkOutDate": "2025-05-01T00:00:00.000Z",
-        "totalPrice": 299,
-        "guests": 1,
+        "totalPrice": 12999,
+        "guests": 2,
         "status": "pending",
         "paymentMethod": "Stripe",
         "isPaid": true,
@@ -223,7 +223,7 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-27T00:00:00.000Z",
         "checkOutDate": "2025-04-28T00:00:00.000Z",
-        "totalPrice": 399,
+        "totalPrice": 4500,
         "guests": 1,
         "status": "pending",
         "paymentMethod": "Pay At Hotel",
@@ -239,8 +239,8 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-11T00:00:00.000Z",
         "checkOutDate": "2025-04-12T00:00:00.000Z",
-        "totalPrice": 199,
-        "guests": 1,
+        "totalPrice": 16000,
+        "guests": 4,
         "status": "pending",
         "paymentMethod": "Pay At Hotel",
         "isPaid": false,

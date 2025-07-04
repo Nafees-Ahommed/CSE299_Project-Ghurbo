@@ -25,11 +25,11 @@ const TourPackages = () => {
     const navigate = useNavigate();
     const [openFilters, setOpenFilters] = useState(false);
 
-    const roomTypes = [
-    "Single Bed",
-    "Double Bed",
-    "Luxury Room",
-    "Family Suite",
+    const packageTypes = [
+    "Solo Traveler",
+    "Couple's Getaway",
+    "Family Fun",
+    "Friends Trip",
 ];
 
 const priceRanges = [
@@ -55,13 +55,13 @@ const sortOptions = [
             <div>
                 {roomsDummyData.map((room)=>(
                   <div key={room._id} className='flex flex-col md:flex-row items-start py-10 gap-6 border-b border-gray-300 last:pb-30 last:border-0'>
-                      <img onClick={()=> {navigate(`/rooms/${room ._id}`); scrollTo(0, 0)}}
+                      <img onClick={()=> {navigate(`/packages/${room._id}`); window.scrollTo(0, 0)}}
                       src={room.images[0]} alt="hotel-img" title='View Room Details' className='max-h-65 md:w-1/2 rounded-x1 shadow-1g object-cover cursor-pointer'/>
                       <div className='md:w-1/2 flex flex-col gap-2'>
                         <p className='text-gray-500'>{room.hotel.city}</p>
-                        <p onClick={()=> {navigate(`/rooms/${room ._id}`); scrollTo(0, 0)}}
+                        <p onClick={()=> {navigate(`/packages/${room._id}`); window.scrollTo(0, 0)}}
                         className='text-gray-800 text-3xl font-playfair cursor-pointer'>{room.hotel.Name}</p>
-                        <div onClick={()=> {navigate(`/rooms/${room ._id}`); scrollto(0, 0);}} 
+                        <div onClick={()=> {navigate(`/packages/${room._id}`); window.scrollto(0, 0);}} 
                         className='flex items-center'>
                             <StarRating />
                             <p className='ml-2'> 300+ reviews</p>
@@ -71,7 +71,7 @@ const sortOptions = [
                             <span>{room.hotel.address}</span>
                         </div>
                         <div>
-                          {/*Room Amenities*/ }
+                          {/*Package Amenities*/ }
                           <div className='flex items-wrap items-center mt-3 mb-6 gap-4'>
                             {room.amenities.map((item, index) => (
                               <div key={index} className='flex items-center gap-2 px-3 py-2 rounded-lg bg-[#F5F5FF]/70'>
@@ -102,7 +102,7 @@ const sortOptions = [
          <div className={`${openFilters ? 'h-auto' : 'h-0 lg:h-auto'} overflow-hidden transition-all duration-700`}>
             <div className='px-5 pt-5'>
                <p className='font-medium text-gray-800 pb-2'>Popular filters</p>
-               {roomTypes.map((room, index)=>(
+               {packageTypes.map((room, index)=>(
                   <CheckBox key={index} label={room}/>
              ))}
             </div>
