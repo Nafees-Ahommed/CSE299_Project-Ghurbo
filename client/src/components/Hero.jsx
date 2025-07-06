@@ -10,11 +10,11 @@ const Hero = () => {
 
        
 
-        <p className='bg-[#49B9FF]/50 px-3.5 py-1 rounded-full mt-20'>The Ultimate Travel Experience </p>
+        <p className='bg-[#fd6801]/50 px-3.5 py-1 rounded-full mt-20'>The Ultimate Travel Experience </p>
 
         <h1 className='font-playfair text-2xl md:text-5xl md:text-[56px] md:leading-[56px] font-bold md:font-extrabold max-w-xl mt-4'>Discover Your Perfect Gateway Destination</h1>
 
-        <p className='max-w-130 mt-2 text-sm md:text-base'> Unparalleled luxury and Comfort.Start Your Perfect journey today. </p>
+        <p className='max-w-130 mt-2 text-sm md:text-base'> Unparalleled beauty and authentic comfort await across Bangladesh’s most breathtaking destinations. Start your journey today. </p>
 
         <form className='bg-white text-gray-500 rounded-lg px-6 py-4 mt-8 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
 
@@ -24,7 +24,7 @@ const Hero = () => {
                     <label htmlFor="destinationInput">Destination</label>
                 </div>
                 <input list='destinations' id="destinationInput" type="text" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" placeholder="Type here" required />
-            <datalist id=' destinations' >
+            <datalist id='destinations' >
 
       {cities.map((city, index)=>(
 
@@ -40,7 +40,7 @@ const Hero = () => {
                 <div className='flex items-center gap-2'>
                     <img src={assets.calenderIcon}  alt="" className='h-4' />
                     
-                    <label htmlFor="checkIn">Check in</label>
+                    <label htmlFor="checkIn">From</label>
                 </div>
                 <input id="checkIn" type="date" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" />
             </div>
@@ -48,7 +48,7 @@ const Hero = () => {
             <div>
                 <div className='flex items-center gap-2'>
                     <img src={assets.calenderIcon}  alt="" className='h-4' />
-                    <label htmlFor="checkOut">Check out</label>
+                    <label htmlFor="checkOut">To</label>
                 </div>
                 <input id="checkOut" type="date" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" />
             </div>
