@@ -11,18 +11,20 @@ import Layout from './pages/PackageOwner/Layout';
 import Dashboard from './pages/PackageOwner/Dashboard';
 import AddPackage from './pages/PackageOwner/AddPackage';
 import ListPackage from './pages/PackageOwner/ListPackage';
+import {Toaster} from 'react-hot-toast';
+import { useAppContext } from './context/AppContext';
 
 
 const App = () => {
 
- 
   const isOwnerPath= useLocation().pathname.includes("owner");
+  const {showPackageReg} = useAppContext();
 
   return (
     <div>
-
+      <Toaster />
       {!isOwnerPath && <Navbar />}
-      {false && <PackageReg />}
+      {showPackageReg && <PackageReg />}
       <div className='min-h-[70vh]'>
 
       <Routes>

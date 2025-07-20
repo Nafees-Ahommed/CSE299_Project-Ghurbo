@@ -12,7 +12,7 @@ import twitterIcon from './twitterIcon.svg'
 import linkendinIcon from './linkendinIcon.svg'
 import freeWifiIcon from './freeWifiIcon.svg'
 import freeBreakfastIcon from './freeBreakfastIcon.svg'
-import roomServiceIcon from './roomServiceIcon.svg'
+import tourGuideIcon from './tourGuideIcon.svg'
 import mountainIcon from './mountainIcon.svg'
 import poolIcon from './poolIcon.svg'
 import homeIcon from './homeIcon.svg'
@@ -54,7 +54,7 @@ export const assets = {
     linkendinIcon,
     freeWifiIcon,
     freeBreakfastIcon,
-    roomServiceIcon,
+    tourGuideIcon,
     mountainIcon,
     poolIcon,
     closeIcon,
@@ -102,7 +102,7 @@ export const testimonials = [
 export const facilityIcons = {
     "Free WiFi": assets.freeWifiIcon,
     "Free Breakfast": assets.freeBreakfastIcon,
-    "Room Service": assets.roomServiceIcon,
+    "Room Service": assets.tourGuideIcon,
     "Mountain View": assets.mountainIcon,
     "Pool Access": assets.poolIcon,
 };
