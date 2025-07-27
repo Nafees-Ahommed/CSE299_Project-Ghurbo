@@ -13,6 +13,8 @@ import AddPackage from './pages/PackageOwner/AddPackage';
 import ListPackage from './pages/PackageOwner/ListPackage';
 import {Toaster} from 'react-hot-toast';
 import { useAppContext } from './context/AppContext';
+import Loader from './components/Loader';
+import PaymentMethod from './pages/PaymentMethod';
 
 
 const App = () => {
@@ -33,6 +35,8 @@ const App = () => {
         <Route path= '/packages' element ={<TourPackages/>} />
         <Route path= '/packages/:id' element ={<PackageDetails/>} />
         <Route path= '/my-bookings' element ={<MyBookings/>} />
+        <Route path= '/payment/:bookingId' element ={<PaymentMethod/>} />
+        <Route path= '/loader/:nextUrl' element ={<Loader/>}/>
         <Route path= '/owner' element={<Layout/>}>
            <Route index element={<Dashboard/>}/>
            <Route path="add-package" element={<AddPackage/>}/>

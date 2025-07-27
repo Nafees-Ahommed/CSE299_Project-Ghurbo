@@ -37,7 +37,10 @@ import listIcon from "./listIcon.svg";
 import uploadArea from "./uploadArea.svg";
 import totalBookingIcon from "./totalBookingIcon.svg";
 import totalRevenueIcon from "./totalRevenueIcon.svg";
-
+import bKash from './bKash.svg'
+import Nagad from './Nagad.svg'
+import Bank from './Bank.svg'
+import Card from './Card.svg'
 
 export const assets = {
     logo,
@@ -72,6 +75,10 @@ export const assets = {
     uploadArea,
     totalBookingIcon,
     totalRevenueIcon,
+    bKash,
+    Nagad,
+    Bank,
+    Card,
 }
 
 export const cities = [
@@ -81,7 +88,8 @@ export const cities = [
     "Rajshahi",
     "Khulna",
     "Barisal",
-    "Cox’s Bazar",
+    "Mymensingh",
+    "Rangpur",
 ];
 
 // Exclusive Offers Dummy Data
@@ -102,18 +110,10 @@ export const testimonials = [
 export const facilityIcons = {
     "Free WiFi": assets.freeWifiIcon,
     "Free Breakfast": assets.freeBreakfastIcon,
-    "Room Service": assets.tourGuideIcon,
+    "Tour Guide": assets.tourGuideIcon,
     "Mountain View": assets.mountainIcon,
     "Pool Access": assets.poolIcon,
 };
-
-// For Room Details Page
-export const roomCommonData = [
-    { icon: assets.homeIcon, title: "Clean & Safe Travel", description: "All our tours follow strict hygiene and safety protocols for your peace of mind." },
-    { icon: assets.badgeIcon, title: "Trusted Service", description: "Curated by Ghurbo with verified partners and expert travel planners." },
-    { icon: assets.locationFilledIcon, title: "Top Destinations", description: "Most of our travelers rated the location 5 stars — close to top attractions and essentials." },
-    { icon: assets.heartIcon, title: "Seamless Booking", description: "Fast, easy, and reliable booking with Ghurbo’s dedicated support." },
-];
 
 // User Dummy Data
 export const userDummyData = {
@@ -130,25 +130,25 @@ export const userDummyData = {
     ]
 }
 
-// Hotel Dummy Data
-export const hotelDummyData = {
+// Package Dummy Data - renamed from hotelDummyData to packageDummyData
+export const packageDummyData = {
     "_id": "67f76393197ac559e4089b72",
     "name": "Best Tour Packages",
-    "address": "Sugandha Point, Cox’s Bazar, Bangladesh",
+    "address": "Sugandha Point, Cox's Bazar, Bangladesh",
     "contact": "+8801712345678",
     "owner": userDummyData,
-    "city": "Cox’s Bazar",
+    "city": "Cox's Bazar",
     "createdAt": "2025-06-01T08:30:00.000Z",
     "updatedAt": "2025-06-20T12:00:00.000Z",
     "__v": 0
 }
 
-// Rooms Dummy Data
-export const roomsDummyData = [
+// Tours Dummy Data - renamed from roomsDummyData to toursDummyData
+export const toursDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
-        "hotel": hotelDummyData,
-        "roomType": "Solo Traveler",
+        "existingPackage": packageDummyData,
+        "tourType": "Solo Traveler",
         "pricePerNight": 5000,
         "amenities": ["Free WiFi", "Free Breakfast", "Pool Access"],
         "images": [packageImg1, packageImg2, packageImg3, packageImg4],
@@ -159,8 +159,8 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76452197ac559e4089b8e",
-        "hotel": hotelDummyData,
-        "roomType": "Couple's Getaway",
+        "existingPackage": packageDummyData,
+        "tourType": "Couple's Getaway",
         "pricePerNight": 3599,
         "amenities": ["Free WiFi", "Free Breakfast", "Pool Access"],
         "images": [packageImg2, packageImg3, packageImg4, packageImg1],
@@ -171,8 +171,8 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76406197ac559e4089b82",
-        "hotel": hotelDummyData,
-        "roomType": "Family Fun",
+        "existingPackage": packageDummyData,
+        "tourType": "Family Fun",
         "pricePerNight": 2549,
         "amenities": ["Free WiFi", "Free Breakfast", "Mountain View"],
         "images": [packageImg3, packageImg4, packageImg1, packageImg2],
@@ -183,12 +183,11 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f763d8197ac559e4089b7a",
-        "hotel": hotelDummyData,
-        "roomType": "Friends Trip",
+        "existingPackage": packageDummyData,
+        "tourType": "Friends Trip",
         "pricePerNight": 2999,
         "amenities": ["Free WiFi", "Free Breakfast", "Mountain View"],
         "images": [packageImg4, packageImg1, packageImg2, packageImg3],
-
         "isAvailable": true,
         "createdAt": "2025-04-10T06:23:20.252Z",
         "updatedAt": "2025-04-10T06:23:20.252Z",
@@ -196,15 +195,21 @@ export const roomsDummyData = [
     }
 ]
 
-
+// For Tour Details Page - renamed from roomCommonData to tourCommonData
+export const tourCommonData = [
+    { icon: assets.homeIcon, title: "Clean & Safe Travel", description: "All our tours follow strict hygiene and safety protocols for your peace of mind." },
+    { icon: assets.badgeIcon, title: "Trusted Service", description: "Curated by Ghurbo with verified partners and expert travel planners." },
+    { icon: assets.locationFilledIcon, title: "Top Destinations", description: "Most of our travelers rated the location 5 stars — close to top attractions and essentials." },
+    { icon: assets.heartIcon, title: "Seamless Booking", description: "Fast, easy, and reliable booking with Ghurbo's dedicated support." },
+];
 
 // User Bookings Dummy Data
 export const userBookingsDummyData = [
     {
         "_id": "67f76839994a731e97d3b8ce",
         "user": userDummyData,
-        "room": roomsDummyData[1],
-        "hotel": hotelDummyData,
+        "tour": toursDummyData[1],
+        "existingPackage": packageDummyData,
         "checkInDate": "2025-04-30T00:00:00.000Z",
         "checkOutDate": "2025-05-01T00:00:00.000Z",
         "totalPrice": 12999,
@@ -219,14 +224,14 @@ export const userBookingsDummyData = [
     {
         "_id": "67f76829994a731e97d3b8c3",
         "user": userDummyData,
-        "room": roomsDummyData[0],
-        "hotel": hotelDummyData,
+        "tour": toursDummyData[0],
+        "existingPackage": packageDummyData,
         "checkInDate": "2025-04-27T00:00:00.000Z",
         "checkOutDate": "2025-04-28T00:00:00.000Z",
         "totalPrice": 4500,
         "guests": 1,
         "status": "pending",
-        "paymentMethod": "Pay At Hotel",
+        "paymentMethod": "Pay At Package",
         "isPaid": false,
         "createdAt": "2025-04-10T06:41:45.873Z",
         "updatedAt": "2025-04-10T06:41:45.873Z",
@@ -235,14 +240,14 @@ export const userBookingsDummyData = [
     {
         "_id": "67f76810994a731e97d3b8b4",
         "user": userDummyData,
-        "room": roomsDummyData[3],
-        "hotel": hotelDummyData,
+        "tour": toursDummyData[3],
+        "existingPackage": packageDummyData,
         "checkInDate": "2025-04-11T00:00:00.000Z",
         "checkOutDate": "2025-04-12T00:00:00.000Z",
         "totalPrice": 16000,
         "guests": 4,
         "status": "pending",
-        "paymentMethod": "Pay At Hotel",
+        "paymentMethod": "Pay At Package",
         "isPaid": false,
         "createdAt": "2025-04-10T06:41:20.501Z",
         "updatedAt": "2025-04-10T06:41:20.501Z",
