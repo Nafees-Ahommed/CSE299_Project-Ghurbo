@@ -5,8 +5,8 @@ const bookingSchema = mongoose.Schema({
    user: {type: String, ref: "User", required: true},
    tour: {type: String, ref: "Tour", required: true},
    existingPackage: {type: String, ref: "Package", required: true},
-   checkInDate: {type: Date, required: true},
-   checkOutDate: {type: Date, required: true},
+   ArrivalDate: {type: Date, required: true},
+   DepartureDate: {type: Date, required: true},
    totalPrice: {type: Number, required: true},
    guests: {type: Number, required: true},
 

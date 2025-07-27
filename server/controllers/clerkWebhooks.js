@@ -18,22 +18,27 @@ const clerkWebhooks = async (req, res) => {
         //Getting data from the request body
         const { data, type } = req.body;
 
-        const userData = {
-            _id: data.id,
-            email: data.email_addresses[0].email_address,
-            username: data.first_name + " " + data.last_name,
-            image: data.profile_image_url,
-        }
-
         //Switch case for different webhook events
         switch (type) {
             case "user.created":{
+                const userData = {
+                 _id: data.id,
+                email: data.email_addresses[0].email_address,
+                username: data.first_name + " " + data.last_name,
+                image: data.profile_image_url,
+                }
                 //Create a new user in the database
                 await User.create(userData);
                 break;
             }
 
             case "user.updated":{
+                const userData = {
+                 _id: data.id,
+                email: data.email_addresses[0].email_address,
+                username: data.first_name + " " + data.last_name,
+                image: data.profile_image_url,
+                }
                 //Update the user in the database
                 await User.findByIdAndUpdate(data.id,userData);
                 break;

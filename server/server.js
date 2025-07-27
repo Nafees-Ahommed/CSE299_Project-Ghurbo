@@ -9,12 +9,15 @@ import packageRouter from './routes/packageRoutes.js';
 import connectCloudinary from './configs/cloudinary.js';
 import tourRouter from './routes/tourRoutes.js';
 import bookingRouter from './routes/bookingRoutes.js';
+import { stripeWebhooks } from './controllers/stripeWebhooks.js';
 
 connectDB() // Connecting to the database using the connectDB function from db.js
 connectCloudinary(); // Connecting to Cloudinary for image uploads
 
 const app = express()         // Creating an instance of express
 app.use(cors())              // Using CORS middleware to allow cross-origin requests
+
+app.post('/api/stripe', express.raw({type: "application/json"}),stripeWebhooks);
 
 //Middleware 
 app.use(express.json())       // Using express.json() middleware to parse JSON request bodies

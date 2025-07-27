@@ -1,4 +1,4 @@
-
+import User from "../models/User.js";
 //GET /Api/user
 
 export const getUserData = async (req, res)=>{
