@@ -41,6 +41,15 @@ import bKash from './bKash.svg'
 import Nagad from './Nagad.svg'
 import Bank from './Bank.svg'
 import Card from './Card.svg'
+import ChatBot from './ChatBot.svg'
+import sylhetExp from "./sylhetExp.jpg";
+import coxsbazarExp from "./coxsbazarExp.jpg";
+import sundarbansExp from "./sundarbansExp.jpg";
+import rangamatiExp from "./rangamatiExp.jpg";
+import bandarbanExp from "./bandarbanExp.jpg";
+import member1 from "./member1.jpg";
+import member2 from "./member2.jpg";
+import member3 from "./member3.jpg";
 
 export const assets = {
     logo,
@@ -79,6 +88,15 @@ export const assets = {
     Nagad,
     Bank,
     Card,
+    ChatBot,
+    sylhetExp,
+    coxsbazarExp,
+    sundarbansExp,
+    rangamatiExp,
+    bandarbanExp,
+    member1,
+    member2,
+    member3,
 }
 
 export const cities = [
@@ -215,7 +233,7 @@ export const userBookingsDummyData = [
         "totalPrice": 12999,
         "guests": 2,
         "status": "pending",
-        "paymentMethod": "Stripe",
+        "paymentMethod": "bkash",
         "isPaid": true,
         "createdAt": "2025-04-10T06:42:01.529Z",
         "updatedAt": "2025-04-10T06:43:54.520Z",
