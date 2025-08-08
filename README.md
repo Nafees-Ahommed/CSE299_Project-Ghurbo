@@ -29,8 +29,6 @@ Date prepared: August 2025
   <a href="#screenshots"><li>Project Screenshots</li></a>
   <ul>
     <a href="#home-page"><li>Home Page</li></a>
-    <a href="#about-page"><li>About Page</li></a>
-    <a href="#experience-page"><li>Experience Page</li></a>
     <a href="#tour-packages"><li>Tour Packages</li></a>
     <a href="#package-details"><li>Package Details & Booking</li></a>
     <a href="#check-availability"><li>Check Availability</li></a>
@@ -40,11 +38,11 @@ Date prepared: August 2025
     <a href="#package-listings"><li>Package Listings</li></a>
     <a href="#add-package"><li>Add Package</li></a>
     <a href="#package-registration"><li>Package Registration Form</li></a>
-    <a href="#chatbot1"><li>AI Chatbot (Step 1)</li></a>
-    <a href="#chatbot2"><li>AI Chatbot (Step 2)</li></a>
-    <a href="#chatbot3"><li>AI Chatbot (Step 3)</li></a>
+    <a href="#chatbot"><li>AI Chatbot</li></a>
     <a href="#email-verification"><li>Email Verification for Login / Delete</li></a>
     <a href="#booking-confirmation"><li>Booking Confirmation Email</li></a>
+    <a href="#experience-page"><li>Experience Page</li></a>
+    <a href="#about-page"><li>About Page</li></a>
   </ul><br>
   <a href="#conclusion"><li>Conclusion</li></a><br>
 </ol>
@@ -94,7 +92,7 @@ The platform blends user-friendly design, curated packages, AI chatbot assistanc
 GHURBO aims to start as a free platform to attract users and build trust. Revenue will be generated through:
 </p>
 <ul>
-  <li>Partner listings (hotels, guides, experiences)</li>
+  <li>Partner listings (Travalers, guides, hotels, experiences)</li>
   <li>Premium package promotions</li>
   <li>Service fees for bookings</li>
   <li>Subscription plans for tour providers</li>
@@ -104,9 +102,6 @@ GHURBO aims to start as a free platform to attract users and build trust. Revenu
 
 <h3 id="home-page">Home Page</h3>
 <img src="image/Home.png">
-
-<h3 id="about-page">About Page</h3>
-<img src="image/About.png">
 
 <h3 id="experience-page">Experience Page</h3>
 <img src="image/Experience.png">
@@ -138,20 +133,17 @@ GHURBO aims to start as a free platform to attract users and build trust. Revenu
 <h3 id="package-registration">Package Registration Form</h3>
 <img src="image/Tour Package Seller Can Sell pakage after get Register.jpg">
 
-<h3 id="chatbot1">AI Chatbot (Step 1)</h3>
-<img src="image/ChatBot1.jpg">
-
-<h3 id="chatbot2">AI Chatbot (Step 2)</h3>
-<img src="image/ChatBot2.jpg">
-
-<h3 id="chatbot3">AI Chatbot (Step 3)</h3>
-<img src="image/ChatBot3.jpg">
+<h3 id="chatbot">AI Chatbot</h3>
+<img src="image/ChatBot.jpg">
 
 <h3 id="email-verification">Email Verification for Login / Delete</h3>
 <img src="image/Verification code Email For Login or Delete account.jpg">
 
 <h3 id="booking-confirmation">Booking Confirmation Email</h3>
 <img src="image/createBooking Email.jpg">
+
+<h3 id="about-page">About Page</h3>
+<img src="image/About.png">
 
 <h2 id="conclusion">6. Conclusion</h2>
 <p>
