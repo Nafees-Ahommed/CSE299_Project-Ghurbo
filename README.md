@@ -103,9 +103,6 @@ GHURBO aims to start as a free platform to attract users and build trust. Revenu
 <h3 id="home-page">Home Page</h3>
 <img src="image/Home.png">
 
-<h3 id="experience-page">Experience Page</h3>
-<img src="image/Experience.png">
-
 <h3 id="tour-packages">Tour Packages</h3>
 <img src="image/Tour Packages.png">
 
@@ -141,6 +138,9 @@ GHURBO aims to start as a free platform to attract users and build trust. Revenu
 
 <h3 id="booking-confirmation">Booking Confirmation Email</h3>
 <img src="image/createBooking Email.jpg">
+
+<h3 id="experience-page">Experience Page</h3>
+<img src="image/Experience.png">
 
 <h3 id="about-page">About Page</h3>
 <img src="image/About.png">
